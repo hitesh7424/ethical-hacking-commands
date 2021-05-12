@@ -1,0 +1,19 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-31 18:46 IST
+Nmap scan report for www.google.com (142.250.183.132)
+Host is up (0.058s latency).
+Other addresses for www.google.com (not scanned): 2404:6800:4009:812::2004
+rDNS record for 142.250.183.132: bom07s31-in-f4.1e100.net
+Not shown: 97 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+554/tcp open  rtsp
+
+Nmap scan report for 192.168.43.1
+Host is up (0.0035s latency).
+Not shown: 99 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: DC:1A:C5:7C:CB:71 (vivo Mobile Communication)
+
+Nmap done: 2 IP addresses (2 hosts up) scanned in 3.69 seconds

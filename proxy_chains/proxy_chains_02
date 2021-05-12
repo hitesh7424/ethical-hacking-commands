@@ -1,0 +1,7 @@
+service tor stop
+service tor start
+
+proxychains firefox www.duckduckgo.com
+
+proxychains web_browser search_engine
+

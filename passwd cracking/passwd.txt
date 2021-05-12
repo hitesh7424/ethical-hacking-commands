@@ -1,0 +1,2 @@
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 128/128 SSE2 2x])
+No password hashes left to crack (see FAQ)

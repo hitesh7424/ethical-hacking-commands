@@ -1,0 +1,8 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-10 23:03 IST
+Nmap scan report for 192.168.43.1
+Host is up (0.0027s latency).
+Nmap scan report for draco (192.168.43.31)
+Host is up (0.00096s latency).
+Nmap scan report for 192.168.43.93
+Host is up (0.0084s latency).
+Nmap done: 256 IP addresses (3 hosts up) scanned in 2.62 seconds

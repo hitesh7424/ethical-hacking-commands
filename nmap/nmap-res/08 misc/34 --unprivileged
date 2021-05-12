@@ -1,0 +1,20 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 00:57 IST
+Nmap scan report for 192.168.43.1
+Host is up (0.0032s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for draco (192.168.43.31)
+Host is up (0.00065s latency).
+Not shown: 999 closed ports
+PORT    STATE SERVICE
+902/tcp open  iss-realsecure
+
+Nmap scan report for 192.168.43.93
+Host is up (0.015s latency).
+Not shown: 999 closed ports
+PORT     STATE    SERVICE
+5060/tcp filtered sip
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 4.52 seconds

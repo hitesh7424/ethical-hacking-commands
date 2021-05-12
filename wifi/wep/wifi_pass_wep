@@ -1,0 +1,7 @@
+airodump-ng --bssid DC:1A:C5:7C:CB:71 --channel 11  wlx1cbfce04e4dd --write test
+
+aircrack-ng test-01.cap
+
+the key will be found in the key section.
+
+

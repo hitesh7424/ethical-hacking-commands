@@ -1,0 +1,17 @@
+if mac address is automatically reset after changing then
+append the following text in the file whose path is "/etc/NetworkManager/NetworkManager.conf" 
+
+
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=false
+
+[device]
+wifi.scan-rand-mac-address=no
+
+[connection]
+ethernet.cloned-mac-address=preserve
+wifi.cloned-mac-address=preserve
+

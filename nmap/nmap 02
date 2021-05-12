@@ -1,0 +1,10 @@
+commands =>
+    nmap scanme.nmap.org
+    ifconfig
+    nmap -oG - 192.168.43.0-255 -vv > nmap_result02.txt
+    
+'-oG' for grepped output (better format)
+'-vv' for more detail
+'> file_name' for output file
+
+'192.168.43.0-255' =>  ip range

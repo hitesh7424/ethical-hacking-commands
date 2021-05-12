@@ -1,0 +1,25 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 00:04 IST
+Nmap scan report for 192.168.43.1
+Host is up (0.0036s latency).
+Not shown: 44 open|filtered ports
+PORT       STATE    SERVICE
+9/sctp     filtered discard
+1167/sctp  filtered cisco-ipsla
+2905/sctp  filtered m3ua
+5091/sctp  filtered cxtp
+6706/sctp  filtered frc-lp
+11998/sctp filtered wmedistribution
+14001/sctp filtered sua
+36422/sctp filtered x2-control
+MAC Address: DC:1A:C5:7C:CB:71 (vivo Mobile Communication)
+
+Nmap scan report for 192.168.43.93
+Host is up (0.0082s latency).
+All 52 scanned ports on 192.168.43.93 are closed
+MAC Address: 84:B8:B8:4B:FD:BF (Motorola (Wuhan) Mobility Technologies Communication)
+
+Nmap scan report for 192.168.43.31
+Host is up (0.000020s latency).
+All 52 scanned ports on 192.168.43.31 are filtered
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 13.64 seconds

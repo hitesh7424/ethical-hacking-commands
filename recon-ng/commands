@@ -1,0 +1,27 @@
+recon-ng
+
+help
+
+show <companies|contacts|credentials|domains|hosts|leaks|locations|netblocks|ports|profiles|pushpins|repositories|vulnerabilities> 
+    
+    :to show specific data entered
+    e.g. => show companies
+            show domains
+
+db <delete|insert|notes|query|schema> [...]
+    
+    :to insert delete data
+    e.g. => db insert domains bbc.com
+
+marketplace <info|install|refresh|remove|search> [...]
+    
+    :to search, install, remove modules
+    e.g. => marketplace search whois
+            marketplace info recon/domains-contacts/whois_pocs
+            marketplace install recon/domains-contacts/whois_pocs 
+    
+modules <load|reload|search> [...]
+    
+    :to load search installed moudules
+    e.g. => modules load whois_pocs
+

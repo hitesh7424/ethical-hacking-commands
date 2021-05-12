@@ -1,0 +1,33 @@
+how to change dns server
+
+dns name is stored in "/etc/resolv.conf" here in linux
+
+to change simply change the nameserver in the file.
+
+somedns server:
+
+    1.1.1.1 +> cloudfare (recomended)
+    8.8.8.8 +> google (not recomended)
+    
+Public DNS Servers
+
+    cloudfare => 
+            1.1.1.1         2606:4700:4700::1111
+            1.0.0.1         2606:4700:4700::1001
+    
+    OpenDNS =>
+            208.67.222.222
+            208.67.220.220
+    
+    Norton DNS =>
+            198.153.192.1
+            198.153.194.1
+        
+    Google Public DNS => (not recomended)
+            8.8.8.8
+            8.8.4.4         
+
+    
+     
+  
+   

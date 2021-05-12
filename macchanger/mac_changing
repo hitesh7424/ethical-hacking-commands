@@ -1,0 +1,17 @@
+To change the mac address follow the command below =>
+
+ifconfig wlx1cbfce04e4dd down
+ifconfig wlx1cbfce04e4dd hw ether 00:11:22:33:44:55
+ifconfig wlx1cbfce04e4dd down
+
+valid mac address
+>it should only contain 0-9 and a-f as it is hexa-decimal
+>first pair should be 00 to avoid errors
+
+some mac addresses =>
+
+    00:12:34:56:67:89
+    D8:32:E3:00:98:11
+    
+
+

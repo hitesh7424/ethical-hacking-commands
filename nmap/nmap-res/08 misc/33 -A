@@ -1,0 +1,45 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 00:56 IST
+Nmap scan report for 192.168.43.1
+Host is up (0.0043s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.51
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.51
+MAC Address: DC:1A:C5:7C:CB:71 (vivo Mobile Communication)
+Device type: phone
+Running: Google Android 5.X|6.X|7.X, Linux 3.X
+OS CPE: cpe:/o:google:android:5 cpe:/o:google:android:6 cpe:/o:google:android:7 cpe:/o:linux:linux_kernel:3
+OS details: Android 5.0 - 7.0 (Linux 3.4 - 3.10)
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   4.35 ms 192.168.43.1
+
+Nmap scan report for 192.168.43.93
+Host is up (0.029s latency).
+Not shown: 999 closed ports
+PORT     STATE    SERVICE VERSION
+5060/tcp filtered sip
+MAC Address: 84:B8:B8:4B:FD:BF (Motorola (Wuhan) Mobility Technologies Communication)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   28.68 ms 192.168.43.93
+
+Nmap scan report for 192.168.43.31
+Host is up (0.000094s latency).
+Not shown: 999 closed ports
+PORT    STATE SERVICE         VERSION
+902/tcp open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+Device type: general purpose
+Running: Linux 5.X
+OS CPE: cpe:/o:linux:linux_kernel:5
+OS details: Linux 5.0 - 5.2
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (3 hosts up) scanned in 33.52 seconds

@@ -1,0 +1,52 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-11 00:12 IST
+PORTS: Using top 1000 ports found open (TCP:1000, UDP:0, SCTP:0)
+--------------- Timing report ---------------
+  hostgroups: min 1, max 100000
+  rtt-timeouts: init 1000, min 100, max 10000
+  max-scan-delay: TCP 1000, UDP 1000, SCTP 1000
+  parallelism: min 0, max 0
+  max-retries: 10, host-timeout: 0
+  min-rate: 0, max-rate: 0
+---------------------------------------------
+Packet capture filter (device wlx1cbfce04e4dd): arp and arp[18:4] = 0x1CBFCE04 and arp[22:2] = 0xE4DD
+Overall sending rates: 96.77 packets / s, 4064.14 bytes / s.
+mass_rdns: Using DNS server 192.168.43.1
+mass_rdns: Using DNS server 2405:200:800::1
+mass_rdns: 0.08s 0/2 [#: 2, OK: 0, NX: 0, DR: 0, SF: 0, TR: 2]
+DNS resolution of 2 IPs took 6.59s. Mode: Async [#: 2, OK: 0, NX: 2, DR: 0, SF: 0, TR: 4, CN: 0]
+mass_rdns: 0.05s 0/1 [#: 2, OK: 0, NX: 0, DR: 0, SF: 0, TR: 1]
+DNS resolution of 1 IPs took 0.05s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Packet capture filter (device wlx1cbfce04e4dd): dst host 192.168.43.31 and (icmp or icmp6 or ((tcp or udp or sctp) and (src host 192.168.43.1 or src host 192.168.43.93)))
+Increased max_successful_tryno for 192.168.43.93 to 1 (packet drop)
+Increased max_successful_tryno for 192.168.43.93 to 2 (packet drop)
+Overall sending rates: 573.60 packets / s, 25238.24 bytes / s.
+Nmap scan report for 192.168.43.1
+Host is up (0.0027s latency).
+Scanned at 2021-04-11 00:12:24 IST for 13s
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: DC:1A:C5:7C:CB:71 (vivo Mobile Communication)
+Final times for host: srtt: 2714 rttvar: 79  to: 100000
+
+Nmap scan report for 192.168.43.93
+Host is up (0.0063s latency).
+Scanned at 2021-04-11 00:12:25 IST for 15s
+Not shown: 999 closed ports
+PORT     STATE    SERVICE
+5060/tcp filtered sip
+MAC Address: 84:B8:B8:4B:FD:BF (Motorola (Wuhan) Mobility Technologies Communication)
+Final times for host: srtt: 6270 rttvar: 1985  to: 100000
+
+Packet capture filter (device lo): dst host 192.168.43.31 and (icmp or icmp6 or ((tcp or udp or sctp) and (src host 192.168.43.31)))
+Overall sending rates: 26086.50 packets / s, 1147806.13 bytes / s.
+Nmap scan report for 192.168.43.31
+Host is up (0.0000090s latency).
+Scanned at 2021-04-11 00:12:40 IST for 0s
+Not shown: 999 closed ports
+PORT    STATE SERVICE
+902/tcp open  iss-realsecure
+Final times for host: srtt: 9 rttvar: 0  to: 100000
+
+Read from /usr/bin/../share/nmap: nmap-mac-prefixes nmap-payloads nmap-services.
+Nmap done: 256 IP addresses (3 hosts up) scanned in 15.82 seconds

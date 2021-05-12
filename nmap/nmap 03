@@ -1,0 +1,16 @@
+nmap -A scanme.namp.org
+     -A: Enable OS detection, version detection, script scanning, and traceroute
+
+nmap -sV scanme.nmap.org
+     -sV: Probe open ports to determine service/version info
+
+namp -F scanme.nmap.org
+     -F: Fast mode - Scan fewer ports than the default scan
+     
+nmap -F scanme.nmap.org www.google.com
+nmap -F www.google.com 192.168.43.1
+     :we can scan multiple in a row
+     
+nmap --open www.google.com
+     --open: Only show open (or possibly open) ports
+           : This command is fast

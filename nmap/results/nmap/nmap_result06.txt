@@ -1,0 +1,14 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-31 18:28 IST
+Nmap scan report for www.google.com (172.217.166.68)
+Host is up (0.10s latency).
+Other addresses for www.google.com (not scanned): 2404:6800:4002:81c::2004
+rDNS record for 172.217.166.68: bom05s15-in-f4.1e100.net
+Not shown: 95 filtered ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+443/tcp  open  https
+554/tcp  open  rtsp
+1723/tcp open  pptp
+
+Nmap done: 1 IP address (1 host up) scanned in 4.41 seconds

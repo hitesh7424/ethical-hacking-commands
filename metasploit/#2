@@ -1,0 +1,15 @@
+reload
+clear
+banner
+clear
+banner
+nmap -sT 192.168.152.128
+nmap -sS 192.168.152.128
+clear
+search ssh_version
+use auxiliary/scanner/ssh/ssh_version
+options
+set RHOST 192.168.152.128
+set THREADS 100
+options
+run

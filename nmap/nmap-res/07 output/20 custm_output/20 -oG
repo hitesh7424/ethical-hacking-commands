@@ -1,0 +1,8 @@
+# Nmap 7.91 scan initiated Sun Apr 11 00:35:34 2021 as: nmap -oG "20 -oG" 192.168.43.0/24
+Host: 192.168.43.1 ()	Status: Up
+Host: 192.168.43.1 ()	Ports: 53/open/tcp//domain///	Ignored State: closed (999)
+Host: 192.168.43.31 (draco)	Status: Up
+Host: 192.168.43.31 (draco)	Ports: 902/open/tcp//iss-realsecure///	Ignored State: closed (999)
+Host: 192.168.43.93 ()	Status: Up
+Host: 192.168.43.93 ()	Ports: 5060/filtered/tcp//sip///	Ignored State: closed (999)
+# Nmap done at Sun Apr 11 00:35:40 2021 -- 256 IP addresses (3 hosts up) scanned in 5.53 seconds

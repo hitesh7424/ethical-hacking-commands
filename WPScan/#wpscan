@@ -1,0 +1,3 @@
+command for wpscan
+
+wpscan --url ip_addr/url -e u vp
